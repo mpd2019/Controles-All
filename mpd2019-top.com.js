@@ -1,30 +1,31 @@
-var 
-    Image_post = document.getElementById("Image_post").Value,
-    Title_post = document.getElementById("Title_post").Value,
-    Q_Post = document.getElementById("Q_Post").Value,
-    Q_Postt = document.getElementById("Q_Postt").Value,
-    D_name = document.getElementById("D_name").Value,
-    D_Varsin = document.getElementById("D_Varsin").Value,
-    D_Size = document.getElementById("D_Size").Value,
-    D_lang = document.getElementById("D_lang").Value,
-    D_System = document.getElementById("D_System").Value,
-    Dawinload1 = document.getElementById("Dawinload1").Value,
-    Dawinload2 = document.getElementById("Dawinload2").Value,
-    Dawinload3 = document.getElementById("Dawinload3").Value,
-    Dawinload4 = document.getElementById("Dawinload4").Value,
-    Dawinload5 = document.getElementById("Dawinload5").Value,
-    Get0Code = document.getElementById("Get0Code").Value,
-    ALL_CODE ='<div dir="rtl" style="text-align: right;" trbidi="on"><div class="separator" style="clear: both; text-align: center;"><a href="/" style="margin-left: 1em; margin-right: 1em;"><img alt="'+ Title_post +'" border="0" data-original-height="180" data-original-width="320" src="'+ Image_post +'" title="'+ Title_post +'" /></a></div><br /><h2 style="text-align: center;"><span style="font-size: x-large;">'+ Title_post +'</span></h2><br /><div style="text-align: right;"><b>'+ Q_Post +'</b></div><br /><br /><div style="text-align: right;"><b>'+ Q_Postt +'</b></div><br /><span style="color: red; font-size: x-large;"><b>معلومات:</b></span><br /><table><tbody><tr><td style="width: 150px;">الاسم</td><td style="width: 350px;">'+ D_name +'</td></tr><tr><td>الاصدار</td><td>'+ D_Varsin +'</td></tr><tr><td>المطور</td><td>'+ D_name +'</td></tr><tr><td>الحجم</td><td>'+ D_Size +'</td></tr><tr><td>اللغة</td><td>'+ D_lang +'</td></tr><tr><td>نظام التشغيل</td><td>'+ D_System +'</td></tr></tbody></table><br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="/" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="65" data-original-width="314" src="https://1.bp.blogspot.com/-RJhRnHMM26Q/XjFJVUXpEAI/AAAAAAAAALo/aOSWc1aLVmcporBm8Z9L6zwrEKNV2UiUACPcBGAYYCw/s1600/45079335.png" /></a></div><div class="separator" style="clear: both; text-align: center;"><a href="/" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="70" data-original-width="125" src="https://1.bp.blogspot.com/-rzdOYV-UH8s/XjCuE_caVtI/AAAAAAAAALc/44mbwhM3owoLmoVrAzFVJEUA5sqU4YqCQCPcBGAYYCw/s1600/638680956.gif" /></a></div><br /><br /><div style="text-align: center;"><a class="button-mpd2019top" href="'+ Dawinload1 +'" target="_blank">تحميل 1</a><br /><a class="button-mpd2019top" href="'+ Dawinload2 +'" target="_blank">تحميل 2</a><br /><a class="button-mpd2019top" href="'+ Dawinload3 +'" target="_blank">تحميل 3</a><br /><a class="button-mpd2019top" href="'+ Dawinload4 +'" target="_blank">تحميل 4</a><br /><a class="button-mpd2019top" href="'+ Dawinload5 +'" target="_blank">تحميل 5</a><br /></div><br /><br /></div>';
 
-GetCode.onclick = function() {
-    document.getElementById("Get0Code").style.display = "block";
-    document.getElementById("Get0Code").innerHTML = ALL_CODE;
+
+GetCode.onclick = function(GetCode) {
+    var 
+    I_i = document.getElementById("I_i").value,
+    T_t = document.getElementById("T_t").value,
+    P_p = document.getElementById("P_p").value,
+    P1_p1 = document.getElementById("P1_p1").value,
+    N_n = document.getElementById("N_n").value,
+    V_v = document.getElementById("V_v").value,
+    SZ_sz = document.getElementById("SZ_sz").value,
+    L_l = document.getElementById("L_l").value,
+    S_s = document.getElementById("S_s").value,
+    D_0 = document.getElementById("Dwon_Sc").value,
+    D_1 = document.getElementById("Dwon1_Sc").value,
+    D_2 = document.getElementById("Dwon2_Sc").value,
+    D_3 = document.getElementById("Dwon3_Sc").value,
+    D_4 = document.getElementById("Dwon4_Sc").value,
+    Reselt = document.getElementById("Reselt"),
+    All_Code ='<div dir="rtl" style="text-align: right;" trbidi="on"><div class="separator" style="clear: both; text-align: center;"><a href="/" style="margin-left: 1em; margin-right: 1em;"><img alt="' + T_t + '" border="0" data-original-height="180" data-original-width="320" src="' + I_i + '" title="' + T_t + '" /></a></div><br /><h2 style="text-align: center;"><span style="font-size: x-large;"><font size="6">' + T_t + '</font></span></h2><br /><div style="text-align: center;"><b>' + P_p + '.</b></div><br /><div style="text-align: center;"><b>' + P1_p1 + '.</b></div><div style="text-align: center;"><br /></div><span style="color: red; font-size: x-large;"><b>معلومات:</b></span><br /><table><tbody><tr><td style="width: 150px;">الاسم</td><td style="width: 350px;">' + N_n + '</td></tr><tr><td>الاصدار</td><td>' + V_v + '</td></tr><tr><td>المطور</td><td>' + N_n + '</td></tr><tr><td>الحجم</td><td>' + SZ_sz + '</td></tr><tr><td>اللغة</td><td>' + L_l + '</td></tr><tr><td>نظام التشغيل</td><td>' + S_s + '</td></tr></tbody></table><br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="/" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="65" data-original-width="314" src="https://1.bp.blogspot.com/-RJhRnHMM26Q/XjFJVUXpEAI/AAAAAAAAALo/aOSWc1aLVmcporBm8Z9L6zwrEKNV2UiUACPcBGAYYCw/s1600/45079335.png" /></a></div><div class="separator" style="clear: both; text-align: center;"><a href="/" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="70" data-original-width="125" src="https://1.bp.blogspot.com/-rzdOYV-UH8s/XjCuE_caVtI/AAAAAAAAALc/44mbwhM3owoLmoVrAzFVJEUA5sqU4YqCQCPcBGAYYCw/s1600/638680956.gif" /></a></div><br /><br /><div style="text-align: center;"><a class="button-mpd2019top" href="' + D_0 + '" target="_blank">تحميل 1</a><a class="button-mpd2019top" href="' + D_1 + '" target="_blank">تحميل 2</a><a class="button-mpd2019top" href="' + D_2 + '" target="_blank">تحميل 3</a><a class="button-mpd2019top" href="' + D_3 + '" target="_blank">تحميل 4</a><a class="button-mpd2019top" href="' + D_4 + '" target="_blank">تحميل 5</a></div><br /><br /></div>';
+    
+    document.getElementById("Reselt").style.display = "block";
+    document.getElementById("Reselt").innerHTML = All_Code;
 }
+//end copy code
+Copy.onclick = function(Copy) {
 
-    //end copy code
-Copy.onclick = function() {
-   var Get0Code = document.getElementById("Get0Code");
-    Get0Code.select();
-    Get0Code.setSelectionRange(0, 99999)
-    document.execCommand("copy");
-  }
+        Reselt.select();
+        Reselt.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+      }
